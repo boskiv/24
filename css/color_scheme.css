@@ -32,7 +32,7 @@ footer hr{border-color:#217090;}
 input.form-control#email_newsletter {background-color:#0076a3;color: #fff;}
 input.form-control#email_newsletter::-moz-placeholder { color: #fff; opacity:0.5;}
 input.form-control#email_newsletter::-webkit-input-placeholder {color: #fff; opacity:0.5;}
-footer {background:#005b7f url(../img/logo_footer.png) no-repeat center 60px;color:#fff;}
+footer {background-color:#005b7f;color:#fff;}
 #nav-footer ul li a{color:#b4d3e0;}
 #nav-footer ul li a:hover{color:#FF9;}
 ul#follow_us  li a{border: 2px solid #b4d3e0;}
