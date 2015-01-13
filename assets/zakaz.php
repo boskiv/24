@@ -29,7 +29,7 @@ if(isset($_POST['name_zakaz_home'])) {
     $mail->isHTML(true);                                  // Set email format to HTML
 
     $mail->Subject = 'Заказ с сайта';
-    $mail->Body    = 'Имя:'.$name.'<br>Email:'.$email.'<br> Сообщение: '.$message.'<br>'.$fstring;
+    $mail->Body    = 'Имя:'.$name.'<br>Email:'.$email.'<br> Сообщение: '.$message.'<br>'.$fstring.'<br>';
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     if(!$mail->send()) {
