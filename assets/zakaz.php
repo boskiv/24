@@ -1,6 +1,6 @@
 <?php
 
-if(isset($_POST['name_zakaz_home']) {
+if(isset($_POST['name_zakaz_home'])) {
     require 'PHPMailerAutoload.php';
 
     $name = $_POST['name'];
