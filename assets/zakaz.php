@@ -18,6 +18,7 @@ if(isset($_POST['name_zakaz_home'])) {
     $mail->Password = 'xxxXXX123';                           // SMTP password
     $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
     $mail->Port = 587;                                    // TCP port to connect to
+    $mail->CharSet = 'UTF-8';
 
     $mail->From = 'diplom24@inbox.ru';
     $mail->FromName = 'Mailer';
