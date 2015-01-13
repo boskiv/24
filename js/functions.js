@@ -157,7 +157,7 @@ function handleFileSelect(evt) {
     }
     document.getElementById('list').innerHTML = '<ul>' + output.join('') + '</ul>';
   }
-document.getElementById('files').addEventListener('change', handleFileSelect, false);
+//document.getElementById('files').addEventListener('change', handleFileSelect, false);
 
 
 // Attach a submit handler to the form
@@ -177,7 +177,8 @@ $( "#zakazform_home" ).submit(function( event ) {
 	var posting = $.post( url, {
 		name_zakaz_home: name_zakaz_home,
 		email_zakaz_home: email_zakaz_home,
-		message_zakaz_home:message_zakaz_home
+		message_zakaz_home:message_zakaz_home,
+		fstring: fstring
 	});
 
 	// Put the results in a div
@@ -187,4 +188,20 @@ $( "#zakazform_home" ).submit(function( event ) {
 	//});
 });
 
+var fstring;
 
+var multipleWidget = uploadcare.MultipleWidget("[role=uploadcare-uploader]");
+multipleWidget.onChange(function(group) {
+	if (group) {
+		group; // group object
+		group.files(); // array of file objects
+		$.when.apply(null, group.files()).then(function() {
+			arguments; // array of individual file infos
+			$.each(arguments, function() {
+				fstring = fstring + '<br>' + this.cdnUrl;
+				console.log(this.cdnUrl); // URL of uploaded file
+				console.log(this.uuid);   // UUID of uploaded file
+			});
+		});
+	}
+});

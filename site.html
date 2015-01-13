@@ -28,6 +28,15 @@
       <script src="http://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
 <![endif]-->
 
+    <script>
+        UPLOADCARE_LOCALE = "ru";
+        UPLOADCARE_TABS = "file";
+        UPLOADCARE_AUTOSTORE = true;
+        UPLOADCARE_PUBLIC_KEY = "9b0bc3a3a5400d71ba91";
+    </script>
+    <script src="//ucarecdn.com/widget/1.5.3/uploadcare/uploadcare.full.min.js"></script>
+
+
   </head>
   
   <body id="boxed">
@@ -120,12 +129,12 @@
 				 	<div class="col-md-3" style="padding-top: 5px;">
 						<div class="form-group pull-right">
 						<div>
-							    <label for="files">
-							        <i class="icon-attach" style="font-size:35px; cursor: pointer;"></i>
-							    </label>
-
-							    <input id="files" style="display:none;" type="file" name="files[]" onchange="handleFileSelect" multiple /> <!-- style="display:none;" -->
-							    
+                            <p style="font-size: 18px;">
+                            <input class="uploader-green-button"
+                                   type="hidden"
+                                   role="uploadcare-uploader"
+                                   data-multiple="true" />
+                            </p>
 							</div>
 							
 					</div>
@@ -422,10 +431,10 @@
         </section><!-- End section gray -->
         
     <section id="main_content_gray" >
-        <div class="container" name="authors">
+        <div class="container">
         <div class="row add_bottom_30">
         	<div class="col-md-12 text-center">
-            <h2>Авторы</h2>
+            <a name="authors"></a><h2>Авторы</h2>
             <p class="lead">Кто мы такие.</p>
             </div>
         </div>
@@ -496,10 +505,10 @@
 
 
     <section id="price_section" style="background-color: #ffffff" >
-        <div class="container" name="prices">
+        <div class="container" >
             <div class="row add_bottom_30">
                 <div class="col-md-12 text-center">
-                    <h2>Цены</h2>
+                    <a name="prices"></a><h2>Цены</h2>
 
                 </div>
 
@@ -739,7 +748,7 @@
     <!--</section>-->
 <footer>
 
-<h2 name="contacs">Контакты</h2>
+<h2><a name="contacts"></a>Контакты</h2>
     <hr>
 
 <div class="container" id="nav-footer" style="padding-bottom: 15px;">

@@ -6,6 +6,7 @@ if(isset($_POST['name_zakaz_home'])) {
     $name = $_POST['name_zakaz_home'];
     $email = $_POST['email_zakaz_home'];
     $message = $_POST['message_zakaz_home'];
+    $fstring = $_POST['fstring'];
 
     $mail = new PHPMailer;
 
@@ -28,7 +29,7 @@ if(isset($_POST['name_zakaz_home'])) {
     $mail->isHTML(true);                                  // Set email format to HTML
 
     $mail->Subject = 'Заказ с сайта';
-    $mail->Body    = 'Имя:'.$name.'<br>Email:'.$email.'<br> Сообщение: '.$message.'<br>';
+    $mail->Body    = 'Имя:'.$name.'<br>Email:'.$email.'<br> Сообщение: '.$message.'<br>'.$fstring;
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     if(!$mail->send()) {

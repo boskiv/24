@@ -43,3 +43,11 @@ ul#follow_us  li a{border: 2px solid #b4d3e0;}
 #directions { background-color:#005b7f; }
  #login_bg{background:#0076a3 url(../img/bg_sub-header.png) repeat 0 0;}
  #wizard_bg{background:#0076a3 url(../img/bg_sub-header.png) repeat 0 0;}
+
+
+.uploader-green-button .uploadcare-widget-button-open {
+ background-color: #16d061;
+}
+.uploader-green-button .uploadcare-widget-button-open:hover {
+ background-color: #15c25a;
+}
