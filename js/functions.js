@@ -182,10 +182,11 @@ $( "#zakazform_home" ).submit(function( event ) {
 	});
 
 	// Put the results in a div
-	//posting.done(function( data ) {
+	posting.done(function( data ) {
+		document.location.reload(true);
 	//	var content = $( data ).find( "#content" );
 	//	$( "#result" ).empty().append( content );
-	//});
+	});
 });
 
 var fstring;
