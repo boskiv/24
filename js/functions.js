@@ -157,7 +157,7 @@ function handleFileSelect(evt) {
     }
     document.getElementById('list').innerHTML = '<ul>' + output.join('') + '</ul>';
   }
-document.getElementById('file-input').addEventListener('change', handleFileSelect, false);
+document.getElementById('files').addEventListener('change', handleFileSelect, false);
 	
 
 
