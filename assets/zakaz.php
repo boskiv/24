@@ -15,7 +15,7 @@ $mail->Port = 587;                                    // TCP port to connect to
 
 $mail->From = 'diplom24@inbox.ru';
 $mail->FromName = 'Mailer';
-$mail->addAddress('bula@mail.ru', 'Bula');     // Add a recipient
+$mail->addAddress('bula_@mail.ru', 'Bula');     // Add a recipient
 
 $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 $mail->isHTML(true);                                  // Set email format to HTML
