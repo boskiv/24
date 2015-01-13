@@ -168,11 +168,17 @@ $( "#zakazform_home" ).submit(function( event ) {
 
 	// Get some values from elements on the page:
 	var $form = $( this ),
-		term = $form.find( "input[name='s']" ).val(),
+		name_zakaz_home = $form.find( "input[name='name_zakaz_home']" ).val(),
+		email_zakaz_home = $form.find( "input[name='name_zakaz_home']" ).val(),
+		message_zakaz_home = $form.find( "input[name='name_zakaz_home']" ).val(),
 		url = $form.attr( "action" );
 
 	// Send the data using post
-	var posting = $.post( url, { s: term } );
+	var posting = $.post( url, {
+		name_zakaz_home: name_zakaz_home,
+		email_zakaz_home: email_zakaz_home,
+		message_zakaz_home:message_zakaz_home
+	});
 
 	// Put the results in a div
 	//posting.done(function( data ) {
