@@ -135,12 +135,12 @@ $('#accordion').on('hidden.bs.collapse', toggleChevron);
 $('#accordion').on('shown.bs.collapse', toggleChevron);
 $('#accordion').on('hidden.bs.collapse', function () {
 })
-<!-- testimonial carousel -->	
+
 $(document).ready(function() {
   //Set the carousel options
   $('#quote-carousel').carousel({
     pause: true,
-    interval: 6000,
+    interval: 6000
   });
 });
 
