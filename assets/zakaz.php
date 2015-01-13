@@ -3,9 +3,9 @@
 if(isset($_POST['name_zakaz_home'])) {
     require 'PHPMailerAutoload.php';
 
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $message = $_POST['message'];
+    $name = $_POST['name_zakaz_home'];
+    $email = $_POST['email_zakaz_home'];
+    $message = $_POST['message_zakaz_home'];
 
     $mail = new PHPMailer;
 
